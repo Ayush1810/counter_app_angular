@@ -1,0 +1,12 @@
+<div class="container">
+  <header>
+    <h1>Counter App</h1>
+  </header>
+  <main>
+    <h2>Current count is : {{ counter }}</h2>
+    <p *ngIf="counter > 10">{{ message }}</p>
+  </main>
+  <button (click)="resCounter()">Reset Counter</button>
+  <button (click)="incCounter()">Increase Counter</button>
+  <button (click)="decCounter()">Decrease Counter</button>
+</div>
